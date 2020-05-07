@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/theOldLadyGame/precache-manifest.d42f5757a3afd4edbb8a0d6ac3e8ffa4.js"
+  "/theOldLadyGame/precache-manifest.68674dff82fc8ff40bdd99106683f132.js"
 );
 
 self.addEventListener('message', (event) => {
