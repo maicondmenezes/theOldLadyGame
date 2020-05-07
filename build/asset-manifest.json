@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/theOldLadyGame/static/css/main.cafefd92.chunk.css",
+    "main.js": "/theOldLadyGame/static/js/main.c7b43ad1.chunk.js",
+    "main.js.map": "/theOldLadyGame/static/js/main.c7b43ad1.chunk.js.map",
+    "runtime-main.js": "/theOldLadyGame/static/js/runtime-main.f2254c3a.js",
+    "runtime-main.js.map": "/theOldLadyGame/static/js/runtime-main.f2254c3a.js.map",
+    "static/js/2.aa72a190.chunk.js": "/theOldLadyGame/static/js/2.aa72a190.chunk.js",
+    "static/js/2.aa72a190.chunk.js.map": "/theOldLadyGame/static/js/2.aa72a190.chunk.js.map",
+    "index.html": "/theOldLadyGame/index.html",
+    "precache-manifest.68674dff82fc8ff40bdd99106683f132.js": "/theOldLadyGame/precache-manifest.68674dff82fc8ff40bdd99106683f132.js",
+    "service-worker.js": "/theOldLadyGame/service-worker.js",
+    "static/css/main.cafefd92.chunk.css.map": "/theOldLadyGame/static/css/main.cafefd92.chunk.css.map",
+    "static/js/2.aa72a190.chunk.js.LICENSE.txt": "/theOldLadyGame/static/js/2.aa72a190.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f2254c3a.js",
+    "static/js/2.aa72a190.chunk.js",
+    "static/css/main.cafefd92.chunk.css",
+    "static/js/main.c7b43ad1.chunk.js"
+  ]
+}
