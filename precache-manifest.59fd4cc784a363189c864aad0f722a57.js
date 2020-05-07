@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea682cc5c613a1ecbd85c7a0557c6259",
+    "revision": "e3db93bc44b2423d9b4c0ea0edda3fc3",
     "url": "/theOldLadyGame/index.html"
   },
   {
-    "revision": "a263170f867aebb170de",
-    "url": "/theOldLadyGame/static/css/main.cafefd92.chunk.css"
+    "revision": "cde6c78687bebc1a3f11",
+    "url": "/theOldLadyGame/static/css/main.8c250bda.chunk.css"
   },
   {
     "revision": "7e2f4ff17e82e8ada1c8",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/theOldLadyGame/static/js/2.aa72a190.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a263170f867aebb170de",
+    "revision": "cde6c78687bebc1a3f11",
     "url": "/theOldLadyGame/static/js/main.c7b43ad1.chunk.js"
   },
   {
