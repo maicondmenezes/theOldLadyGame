@@ -1,0 +1,30 @@
+ 
+.board-table {
+  flex: 1;
+  margin: 10px;
+  padding: 15px 0px; 
+  background-color: #363636;
+  color: #000;
+ 
+  align-items: center;   
+}
+/*
+.board-table{
+  flex: 1;
+  padding: 15px 0;
+  align-items: center;  
+}
+
+.board-row{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+}
+
+.board-square{
+  min-width: 64px;
+  min-height: 64px;
+  margin: 5px;
+}
+ */
