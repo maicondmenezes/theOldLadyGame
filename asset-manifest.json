@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.cafefd92.chunk.css",
-    "main.js": "/static/js/main.c7b43ad1.chunk.js",
-    "main.js.map": "/static/js/main.c7b43ad1.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.152c6276.js",
-    "runtime-main.js.map": "/static/js/runtime-main.152c6276.js.map",
-    "static/js/2.aa72a190.chunk.js": "/static/js/2.aa72a190.chunk.js",
-    "static/js/2.aa72a190.chunk.js.map": "/static/js/2.aa72a190.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.456cfbc00be7b2317734e5c4a1c6af6b.js": "/precache-manifest.456cfbc00be7b2317734e5c4a1c6af6b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.cafefd92.chunk.css.map": "/static/css/main.cafefd92.chunk.css.map",
-    "static/js/2.aa72a190.chunk.js.LICENSE.txt": "/static/js/2.aa72a190.chunk.js.LICENSE.txt"
+    "main.css": "/theOldLadyGame/static/css/main.cafefd92.chunk.css",
+    "main.js": "/theOldLadyGame/static/js/main.c7b43ad1.chunk.js",
+    "main.js.map": "/theOldLadyGame/static/js/main.c7b43ad1.chunk.js.map",
+    "runtime-main.js": "/theOldLadyGame/static/js/runtime-main.f2254c3a.js",
+    "runtime-main.js.map": "/theOldLadyGame/static/js/runtime-main.f2254c3a.js.map",
+    "static/js/2.aa72a190.chunk.js": "/theOldLadyGame/static/js/2.aa72a190.chunk.js",
+    "static/js/2.aa72a190.chunk.js.map": "/theOldLadyGame/static/js/2.aa72a190.chunk.js.map",
+    "index.html": "/theOldLadyGame/index.html",
+    "precache-manifest.d42f5757a3afd4edbb8a0d6ac3e8ffa4.js": "/theOldLadyGame/precache-manifest.d42f5757a3afd4edbb8a0d6ac3e8ffa4.js",
+    "service-worker.js": "/theOldLadyGame/service-worker.js",
+    "static/css/main.cafefd92.chunk.css.map": "/theOldLadyGame/static/css/main.cafefd92.chunk.css.map",
+    "static/js/2.aa72a190.chunk.js.LICENSE.txt": "/theOldLadyGame/static/js/2.aa72a190.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.152c6276.js",
+    "static/js/runtime-main.f2254c3a.js",
     "static/js/2.aa72a190.chunk.js",
     "static/css/main.cafefd92.chunk.css",
     "static/js/main.c7b43ad1.chunk.js"
