@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "The Old Lady Game",
+  "name": "A Simple web version for the famous TicTacToe",
   "icons": [
     {
       "src": "favicon.ico",
