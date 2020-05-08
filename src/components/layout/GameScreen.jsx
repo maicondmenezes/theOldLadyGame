@@ -1,6 +1,10 @@
 import './GameScreen.css'
 import React from 'react'
 import Board from './Board'
+import Button from '@material-ui/core/Button';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import RestoreIcon from '@material-ui/icons/Restore';
 
 class GameScreen extends React.Component {
   constructor(props) {
@@ -10,7 +14,8 @@ class GameScreen extends React.Component {
         squares: Array(9).fill(null)
       }],
       stepNumber: 0,
-      xIsNext: true
+      xIsNext: true,
+      value: 0,
     }
   }
 
@@ -40,26 +45,32 @@ class GameScreen extends React.Component {
       xIsNext: (step % 2) === 0,
     });
   }
-
+  
+  handleChange = (event, newValue) => {
+    this.setState({
+      value: newValue,
+    });
+  }
+  
   render(){
     const history = this.state.history;
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
+    
     const moves = history.map((step, move) => {
-      const desc = move ? 
-      '' + move :
-      'B';
+      const desc = move ? '' + move : 'B';
       return (
-        <ul 
+        
+        <BottomNavigationAction 
+          label={'Step:'+desc}
+          value ={'Step:'+desc}
           key={move}
-          className='StepItem'>
-          <button 
-            className = 'StepButton'
-            onClick={() => this.jumpTo(move)}
+          className='StepItem'
+          icon={<RestoreIcon />}
+          onClick={() => this.jumpTo(move)}
           >
-            {desc}
-          </button>
-        </ul>
+            {desc}          
+        </BottomNavigationAction>
       );
     });
     let status;
@@ -82,7 +93,14 @@ class GameScreen extends React.Component {
         <div className='Status'>
           <div>{status}</div>
           <p className='StepTitle'>Steps:</p>
-          <ol className='Steps'>{moves}</ol>
+          <BottomNavigation 
+            value={this.value}
+            onChange = {this.handleChange}
+            className='Steps' 
+            showLabels           
+          >
+            {moves}
+          </BottomNavigation>
         </div>
       </div>
     );
