@@ -1,7 +1,7 @@
-import './GameScreen.css'
+import '../css/GameScreen.css'
 import React from 'react'
-import Board from './Board'
-import Button from '@material-ui/core/Button';
+// import Board from './Board'
+import Login from './Login'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import RestoreIcon from '@material-ui/icons/Restore';
@@ -15,7 +15,6 @@ class GameScreen extends React.Component {
       }],
       stepNumber: 0,
       xIsNext: true,
-      value: 0,
     }
   }
 
@@ -44,19 +43,13 @@ class GameScreen extends React.Component {
       stepNumber: step,
       xIsNext: (step % 2) === 0,
     });
-  }
-  
-  handleChange = (event, newValue) => {
-    this.setState({
-      value: newValue,
-    });
-  }
-  
+  }  
+    
   render(){
     const history = this.state.history;
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
-    
+ 
     const moves = history.map((step, move) => {
       const desc = move ? '' + move : 'B';
       return (
@@ -73,6 +66,7 @@ class GameScreen extends React.Component {
         </BottomNavigationAction>
       );
     });
+    
     let status;
     if(winner) {
       status = 'Winner is Player ' + winner;
@@ -85,10 +79,11 @@ class GameScreen extends React.Component {
           {this.props.title}
         </div>
         <div className='Board'>
-          <Board 
+          <Login />
+          {/* <Board 
             squares ={current.squares}
             onClick ={(i) => this.handleClick(i)}
-          />
+          /> */}
         </div>
         <div className='Status'>
           <div>{status}</div>

@@ -1,6 +1,6 @@
 {
   "name": "the-oldlady-game",
-  "version": "0.4.0b",
+  "version": "0.5.0b",
   "private": true,
   "homepage": "https://maicondmenezes.github.io/theOldLadyGame/",
   "dependencies": {
@@ -11,6 +11,9 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.1.14",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
   },
   "scripts": {
