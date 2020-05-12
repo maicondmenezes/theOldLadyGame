@@ -1,5 +1,6 @@
 import '../css/GameScreen.css'
 import React from 'react'
+import Link from '@material-ui/core/Link';
 // import Board from './Board'
 import Login from './Login'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
@@ -86,7 +87,10 @@ class GameScreen extends React.Component {
           /> */}
         </div>
         <div className='Status'>
-          <div>{status}</div>
+          <Link href = 'mailto:mdmoliveira@inf.ufpel.edu.br'>
+            mdmoliveira@inf.ufpel.edu.br
+          </Link>
+          {/* <div>{status}</div>
           <p className='StepTitle'>Steps:</p>
           <BottomNavigation 
             value={this.value}
@@ -95,7 +99,7 @@ class GameScreen extends React.Component {
             showLabels           
           >
             {moves}
-          </BottomNavigation>
+          </BottomNavigation> */}
         </div>
       </div>
     );
