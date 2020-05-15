@@ -2,12 +2,18 @@ import './css/App.css';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
-import GameScreen from './layout/GameScreen';
+import GameScreen from './view/GameScreen';
+import Login from './view/Login';
+import Register from './view/Register';
 
-export default props => (
-  <Provider store = {store}>
-    <div className = 'App'>    
-      <GameScreen title = '-The Old Lady Game-' />
-    </div>
-  </Provider>
-)
+function App() {
+  return(
+    <Provider store = {store}>
+      <div className = 'App'>    
+        <Register />      
+      </div>
+    </Provider>
+  );  
+}
+
+export default App;

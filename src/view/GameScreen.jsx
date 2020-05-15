@@ -1,8 +1,6 @@
 import '../css/GameScreen.css'
 import React from 'react'
-import Link from '@material-ui/core/Link';
-// import Board from './Board'
-import Login from './Login'
+import Board from '../components/Board'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import RestoreIcon from '@material-ui/icons/Restore';
@@ -79,18 +77,14 @@ class GameScreen extends React.Component {
         <div className='Title'>
           {this.props.title}
         </div>
-        <div className='Board'>
-          <Login />
-          {/* <Board 
+        <div className='Board'>          
+          <Board 
             squares ={current.squares}
             onClick ={(i) => this.handleClick(i)}
-          /> */}
+          />
         </div>
-        <div className='Status'>
-          <Link href = 'mailto:mdmoliveira@inf.ufpel.edu.br'>
-            mdmoliveira@inf.ufpel.edu.br
-          </Link>
-          {/* <div>{status}</div>
+        <div className='Status'>          
+          <div>{status}</div>
           <p className='StepTitle'>Steps:</p>
           <BottomNavigation 
             value={this.value}
@@ -99,7 +93,7 @@ class GameScreen extends React.Component {
             showLabels           
           >
             {moves}
-          </BottomNavigation> */}
+          </BottomNavigation>
         </div>
       </div>
     );

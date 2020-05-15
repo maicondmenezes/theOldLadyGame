@@ -3,14 +3,21 @@ export default {
     token : {},
     credentials : {
       username : '',
-      password : ''
-    },
-    isLoading : {
-      active : false,
-      msg : null
-    },
-    success : false,
-    error   : null
+      password : '',
+      picture : '',
+    }
+  },
+  register : {
+    data : {
+      picture  : './grandmaProfile.jpg',
+      name     : '',      
+      email    : '',
+      login    : '',
+      password : '',
+      
+    },    
+    error : {},
+    success : false
   },
   loading : {
     open : false,
@@ -18,7 +25,7 @@ export default {
   },
   notify : {
     open       : false,
-    class      : 'success',
+    // class      : 'success',
     vertical   : 'top',
     horizontal : 'center',
     time       : 3000,

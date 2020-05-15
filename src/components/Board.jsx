@@ -1,6 +1,6 @@
-import './Board.css'
+import '../css/Board.css'
 import React from 'react'
-import Square from '../Square'
+import Square from './Square'
 
 class Board extends React.Component {
 

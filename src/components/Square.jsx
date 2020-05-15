@@ -1,4 +1,4 @@
-import './css/Square.css';
+import '../css/Square.css';
 import React from 'react';
 import Button from '@material-ui/core/Button';
 

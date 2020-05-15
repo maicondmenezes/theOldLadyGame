@@ -89,7 +89,6 @@ export const login = (credentials) => {
         if ( error.response.status === 401 || error.response.status === 400) {
           dispatch(changeNotify({
             open       : true,
-            class      : 'erro',
             msg        : 'There\'s something wrong with your Login data (username or password)',
             severity   : 'error'
           })) 
@@ -97,7 +96,6 @@ export const login = (credentials) => {
       } else {
         dispatch(changeNotify({
           open       : true,
-          class      : 'erro',
           msg        : 'There\'s something wrong with your autenthication',
           severity   : 'error'
         })) 

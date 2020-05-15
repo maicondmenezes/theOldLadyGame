@@ -1,22 +1,23 @@
 import '../css/Login.css'
 import React, { Component }   from 'react';
 import { connect }            from 'react-redux';
+import GoogleLogin            from 'react-google-login';
 import { login, changeValue } from '../store/actions/auth.action';
+import Loading                from '../components/Loading/Loading';
+import Notify                 from '../components/Notify/Notify';
+
+import ExitToAppIcon          from '@material-ui/icons/ExitToApp';
+import ContactMailIcon        from '@material-ui/icons/ContactMail';
+import MailIcon               from '@material-ui/icons/Mail';
 import withStyles             from '@material-ui/core/styles/withStyles';
 import Container              from '@material-ui/core/Container';
-import GoogleLogin            from 'react-google-login';
 import TextField              from '@material-ui/core/TextField';
 import Button                 from '@material-ui/core/Button';
 import Typography             from '@material-ui/core/Typography';
 import Link                   from '@material-ui/core/Link';
-import ExitToAppIcon          from '@material-ui/icons/ExitToApp';
-import ContactMailIcon        from '@material-ui/icons/ContactMail';
-import MailIcon               from '@material-ui/icons/Mail';
 import green                  from '@material-ui/core/colors/green';
 import CardMedia              from '@material-ui/core/CardMedia';
-import Loading                from '../components/Loading/Loading';
-import Notify                from '../components/Notify/Notify';
-// import CircularProgressBar    from '../components/CircularProgress/CircularProgressBar';
+
 
 const responseGoogle = (response) => {
   console.log(response);
@@ -103,7 +104,7 @@ export class Login extends Component {
                 onClick   = { () => this.login()}
                 fullWidth                
               >
-                LogIn
+                Sign IN
               </Button>
             </div>
           </div>
@@ -111,7 +112,7 @@ export class Login extends Component {
         
         <div className = 'LoginButons'>
           <div className = 'SignInButton'>
-            <Link href = '/register'>
+            <Link href = {'/register'}>
               <ColorButton
                 type      = 'button'
                 variant   = 'contained'
@@ -120,7 +121,7 @@ export class Login extends Component {
                 fullWidth      
                 startIcon={<ContactMailIcon />}
               >
-                SignIn
+                Sign UP
               </ColorButton>
             </Link>
           </div>   
